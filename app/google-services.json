@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "207807864122",
-    "project_id": "authentication1-be858",
-    "storage_bucket": "authentication1-be858.firebasestorage.app"
+    "project_number": "1012762733423",
+    "project_id": "centric-budgeting-app",
+    "storage_bucket": "centric-budgeting-app.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:207807864122:android:170ac96ce422ecf8c60403",
+        "mobilesdk_app_id": "1:1012762733423:android:638fd6a56a064c10e9969a",
         "android_client_info": {
           "package_name": "com.example.authentification1"
         }
@@ -15,7 +15,45 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAbqJr_QHHCt3_EmcfU4la-Ue7ikNrVWDo"
+          "current_key": "AIzaSyCmjdlO0fEbs0kHWsLHRSPGM3g3XUEPm3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012762733423:android:c5745b4e4191296de9969a",
+        "android_client_info": {
+          "package_name": "com.example.centricapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmjdlO0fEbs0kHWsLHRSPGM3g3XUEPm3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012762733423:android:74b03dccd13e9f5ce9969a",
+        "android_client_info": {
+          "package_name": "com.example.centricbudgetingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmjdlO0fEbs0kHWsLHRSPGM3g3XUEPm3U"
         }
       ],
       "services": {
