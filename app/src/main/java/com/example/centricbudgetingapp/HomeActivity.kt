@@ -14,6 +14,7 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var navigationView: NavigationView
     private lateinit var menuButton: ImageButton
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -30,6 +31,7 @@ class HomeActivity : AppCompatActivity() {
         // Handle menu item clicks
         navigationView.setNavigationItemSelectedListener { item ->
             when (item.itemId) {
+                R.id.nav_home -> startActivity(Intent(this, HomeActivity::class.java))
                 R.id.nav_add_category -> startActivity(Intent(this, AddCategoryActivity::class.java))
                 R.id.nav_add_expense -> startActivity(Intent(this, AddExpenseActivity::class.java))
                 R.id.nav_budget_goals -> startActivity(Intent(this, BudgetGoalsActivity::class.java))
@@ -41,4 +43,5 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 }
+
 

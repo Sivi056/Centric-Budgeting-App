@@ -18,11 +18,11 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/hamburgermenuicon"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:tint="#FFFFFF"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_margin="16dp"/>
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tint="#FFFFFF" />
 
         <!-- Dashboard Headings -->
         <TextView
@@ -33,22 +33,22 @@
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/btnMenu"
-            app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="24dp"
-            android:layout_marginStart="16dp"/>
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@id/btnMenu"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/Remaining"
+            android:id="@+id/tvRemaining"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Remaining: R1,700.00"
             android:textColor="#CCCCCC"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/tvBalance"
-            app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="12dp"
-            android:layout_marginStart="16dp"/>
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvBalance"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -64,5 +64,3 @@
         app:menu="@menu/nav_menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
-
-
