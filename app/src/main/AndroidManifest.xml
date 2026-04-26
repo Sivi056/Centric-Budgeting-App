@@ -26,6 +26,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/Theme.Material3.Dark.NoActionBar"
+            android:exported="true" />
+
+        <activity android:name=".AddCategoryActivity"
+            android:theme="@style/Theme.Material3.Dark.NoActionBar"
+            android:exported="true" />
+
+        <activity android:name=".AddExpenseActivity"
+            android:theme="@style/Theme.Material3.Dark.NoActionBar"
+            android:exported="true" />
+
+        <activity android:name=".BudgetGoalsActivity"
+            android:theme="@style/Theme.Material3.Dark.NoActionBar"
+            android:exported="true" />
+
+        <activity android:name=".ViewExpensesActivity"
+            android:theme="@style/Theme.Material3.Dark.NoActionBar"
+            android:exported="true" />
+
+        <activity android:name=".CategoryTotalsActivity"
+            android:theme="@style/Theme.Material3.Dark.NoActionBar"
+            android:exported="true" />
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -37,6 +64,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
