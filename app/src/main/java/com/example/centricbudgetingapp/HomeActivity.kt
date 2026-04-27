@@ -25,7 +25,7 @@ class HomeActivity : AppCompatActivity() {
 
     var button1: Button? = null
     val userId = FirebaseAuth.getInstance().currentUser?.uid
-//    val userRef = db.collection("users").document(userId!!)
+    val userRef = db.collection("users").document(userId!!)
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,13 +33,27 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         // Manually reference a known document ID
-        val testUserId = "YkWuXMXXXyPSfMAT41LjswX2qyx1"
-        val userRef = db.collection("users").document(testUserId)
+//        val testUserId = "YkWuXMXXXyPSfMAT41LjswX2qyx1"
+        val userRef = db.collection("users").document(userId!!)
 
         userRef.get().addOnSuccessListener { doc ->
             if (doc != null && doc.exists()) {
                 val name = doc.getString("name")
                 findViewById<TextView>(R.id.tvTest).text = "Welcome, $name"
+//                val balance = doc.getString("balance")
+//                findViewById<TextView>(R.id.tvBalance).text = "Budget, $balance"
+            } else {
+                findViewById<TextView>(R.id.tvTest).text = "No document found"
+            }
+        }.addOnFailureListener { e ->
+            findViewById<TextView>(R.id.tvTest).text = "Error: ${e.message}"
+        }
+        userRef.get().addOnSuccessListener { doc ->
+            if (doc != null && doc.exists()) {
+//                val name = doc.getString("name")
+//                findViewById<TextView>(R.id.tvTest).text = "Welcome, $name"
+                val balance = doc.get("balance")
+                findViewById<TextView>(R.id.tvBalance).text = "Balance, $balance"
             } else {
                 findViewById<TextView>(R.id.tvTest).text = "No document found"
             }

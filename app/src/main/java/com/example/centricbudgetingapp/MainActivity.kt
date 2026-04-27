@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
     var user: FirebaseUser? = null
     val db = Firebase.firestore
     val userId = FirebaseAuth.getInstance().currentUser?.uid
-    //val userRef = db.collection("users").document(userId!!)
+    val userRef = db.collection("users").document(userId!!)
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {

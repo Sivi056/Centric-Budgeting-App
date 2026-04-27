@@ -29,7 +29,6 @@
             android:id="@+id/tvBalance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Balance: R7,650.00"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold"
